@@ -3,7 +3,7 @@ import fade from "../images/vectorfading.svg";
 export function Rectangle(props) {
   return (
     <>
-      <div className="relative rounded-md bg-gradient-to-r from-[#e346ff] to-[#00c6ff] flex flex-col items-center p-0.5 mb-5 max-h-[250px] min-w-[200px] w-[300px]">
+      <div className="relative rounded-md bg-gradient-to-r from-[#e346ff] to-[#00c6ff] flex flex-col items-center p-0.5 mb-10 max-h-[250px] min-w-[200px] w-[300px]">
         <div className="bg-black/85 px-1 rounded-md max-h-[240px]">
           <div className="absolute top-[-120px] flex relative flex-col justify-center items-center w-full self-stretch aspect-square max-md:px-5">
             <img
