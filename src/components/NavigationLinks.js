@@ -8,6 +8,7 @@ export function NavigationLinks() {
       name: "Whitepaper",
       link: "https://github.com/ParlayIt/Documents/blob/main/ParlayIt_whitepaper_FINAL.pdf",
     },
+    { name: "Documents", link: "https://github.com/ParlayIt/Documents" },
   ];
 
   return (

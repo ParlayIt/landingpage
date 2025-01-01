@@ -4,7 +4,7 @@ import parlaylogo from "../images/parlaylogo.png";
 
 export function NavigationBar() {
   return (
-    <div className="w-full flex flex-wrap item-center justify-center md:justify-between gap-5 px-20 p-3 text-sm leading-none text-white rounded-lg border border-solid bg-black bg-opacity-50 border-white border-opacity-10">
+    <div className="w-full flex item-center justify-between gap-5 px-5 md:px-20 p-3 text-sm leading-none text-white rounded-lg border border-solid bg-black bg-opacity-50 border-white border-opacity-10">
       <img
         loading="lazy"
         src={parlaylogo}

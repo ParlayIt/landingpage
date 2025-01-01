@@ -17,7 +17,10 @@ import { Slide, Grow, Fade } from "@mui/material";
 import { AnimatedComponent } from "../components/Observer";
 import { Partners } from "../components/Partners";
 
+// import { UseObserver } from "../components/Observer";
 export function Landing() {
+  // const { isVisible } = UseObserver();
+
   return (
     <>
       <div className="w-full h-full flex flex-col overflow-x-hidden">
@@ -28,7 +31,7 @@ export function Landing() {
           {/* Innovation heading */}
           <div className="w-full relative my-10 py-10 px-5 flex justify-center items-center">
             <AnimatedComponent>
-              <Slide in={true} direction="right">
+              <Slide direction="right">
                 <img
                   className="absolute w-[300px] h-10 top-[0px] lg:top-[50px] left-[0]"
                   alt="Vector"
@@ -37,7 +40,7 @@ export function Landing() {
               </Slide>
             </AnimatedComponent>
             <AnimatedComponent>
-              <Slide in={true} direction="left">
+              <Slide direction="left">
                 <img
                   className="absolute w-[300px] h-10 top-[75px] lg:top-[25px] right-[0] rotate-180"
                   alt="Vector"
@@ -68,7 +71,7 @@ export function Landing() {
             {/* </div> */}
             <div className="z-[-1] absolute top-[-100px] left-[0] w-[300px] h-[300px] rounded-[200px/200px] blur-[100px] bg-gradient-to-r from-[#e346ff] to-[#00c6ff] opacity-40"></div>
             <AnimatedComponent>
-              <Slide in={true} direction="right">
+              <Slide direction="right">
                 <div className="lg:absolute lg:left-[70px] px-2 text-white text-3xl font-sora flex flex-col text-left">
                   <h1 className="">Enter the</h1>
                   <h1 className="bg-gradient-to-r from-[#e346ff] to-[#00c6ff] inline-block text-transparent bg-clip-text">
@@ -78,7 +81,7 @@ export function Landing() {
               </Slide>
             </AnimatedComponent>
             <AnimatedComponent>
-              <Slide in={true} direction="left">
+              <Slide direction="left">
                 <img
                   className="absolute h-[60px] top-[100px] lg:top-[30px] right-[0]"
                   alt="Vector"
@@ -96,8 +99,8 @@ export function Landing() {
 
         {/* ========================= ========================= */}
         {/* Waves background */}
-        <div className="w-full relative my-10 py-10 mb-[-50px] lg:mb-[100px] flex  justify-center items-center">
-          <div className="absolute w-full top-[-300px] z-[-1]">
+        <div className="w-full relative my-10 py-10 mb-[-50px] lg:mb-0 flex  justify-center items-center">
+          <div className="absolute w-full top-[-200px] md:top[-300px] lg:top-[-400px] z-[-1]">
             <img
               loading="lazy"
               src={waves}
@@ -107,7 +110,7 @@ export function Landing() {
           </div>
         </div>
         <div className="relative">
-          <div className="absolute left-0 top-[-50px]">
+          <div className="absolute left-0 top-[0] md:top-[100px]">
             <img
               className="object-fit h-[600px]"
               alt="vectorgroup"
@@ -119,17 +122,13 @@ export function Landing() {
 
         <div className="relative w-full container mx-auto flex flex-col justify-center items-center">
           {/* Section NFT */}
-          <div className="w-full lg:w-3/4 relative lg:mb-[150px] my-10 py-10 px-5 flex justify-center items-center">
+          <div className="w-full lg:w-3/4 relative top-0 md:top-[100px] md:mb-[150px] my-10 py-10 px-5 flex justify-center items-center">
             <div className="z-[-1] absolute top-[-100px] right-[0] w-[300px] h-[300px] rounded-[200px/200px] blur-[100px] bg-gradient-to-r from-[#e346ff] to-[#00c6ff] opacity-40"></div>
             <div className="grid flex flex-row flex-wrap lg:grid-rows-1 lg:grid-cols-2 gap-20">
               <div className="relative flex justify-center items-center">
                 <AnimatedComponent>
-                  <Fade in={true} style={{ transformOrigin: "0 0 0" }}>
-                    <img
-                      className="lg:absolute left-0 top-[-50px] object-cover"
-                      alt="NFT"
-                      src={nfts}
-                    />
+                  <Fade style={{ transformOrigin: "0 0 0" }}>
+                    <img className="object-cover" alt="NFT" src={nfts} />
                   </Fade>
                 </AnimatedComponent>
               </div>
@@ -143,7 +142,7 @@ export function Landing() {
                   </h1>
                 </div>
                 <AnimatedComponent>
-                  <Slide in={true} direction="left">
+                  <Slide direction="left">
                     <div className="p-2 text-white text-left">
                       <p className="relative self-stretch font-sora font-extralight text-[#ffffffb2] text-md tracking-[0] leading-[normal]">
                         NFTs are taking over the Crypto sphere and everyday help
@@ -165,7 +164,7 @@ export function Landing() {
           <div className="w-full relative lg:mt-[100px] my-10 py-10 px-5 flex justify-center items-center">
             <div className="z-[-1] absolute top-[-100px] left-[0] w-[300px] h-[300px] rounded-[200px/200px] blur-[100px] bg-gradient-to-r from-[#e346ff] to-[#00c6ff] opacity-40"></div>{" "}
             <AnimatedComponent>
-              <Slide in={true} direction="right">
+              <Slide direction="right">
                 <div className="lg:absolute lg:left-[70px] px-2 text-white text-3xl font-sora flex flex-col text-left">
                   <h1 className="bg-gradient-to-r from-[#e346ff] to-[#00c6ff] inline-block text-transparent bg-clip-text">
                     Roadmap
@@ -174,7 +173,7 @@ export function Landing() {
               </Slide>
             </AnimatedComponent>
             <AnimatedComponent>
-              <Slide in={true} direction="left">
+              <Slide direction="left">
                 <img
                   className="absolute w-full lg:w-3/4 h-[60px] top-[-10px] lg:top-[15px] right-0"
                   alt="Vector"
@@ -185,8 +184,8 @@ export function Landing() {
           </div>
 
           {/* Section roadmap */}
-          <div className="w-full lg:w-3/4 relative my-10 py-10 px-5 flex justify-center items-center">
-            <div className="grid grid-cols-1 justify-start content-start grid-rows-3 md:grid-rows-1 md:grid-cols-3">
+          <div className="w-full lg:w-3/4 relative my-10 py-10 px-5 flex justify-center">
+            <div className="grid grid-cols-1 grid-rows-3 md:grid-rows-1 md:grid-cols-3">
               <AnimatedComponent>
                 <Grow
                   in={true}

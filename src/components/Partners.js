@@ -12,7 +12,7 @@ export function Partners() {
         </div>
         <div className="w-full relative flex flex-row flex-wrap gap-20 justify-center">
           <AnimatedComponent>
-            <Slide in={true} direction="right">
+            <Slide direction="right">
               <div className="flex flex-col">
                 <p className="pb-2 text-sm font-sora leading-normal text-white text-opacity-70">
                   Powered by
@@ -24,7 +24,7 @@ export function Partners() {
             </Slide>
           </AnimatedComponent>
           <AnimatedComponent>
-            <Slide in={true} direction="left">
+            <Slide direction="left">
               <div className="flex flex-col">
                 <p className="pb-2 text-sm font-sora leading-normal text-white text-opacity-70">
                   Secured by

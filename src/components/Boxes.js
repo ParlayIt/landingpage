@@ -14,11 +14,7 @@ export function Boxes() {
       <div className="grid md:grid-cols-3 md:gap-5">
         <div className="col-span-1 flex">
           <AnimatedComponent>
-            <Grow
-              in={true}
-              style={{ transformOrigin: "0 0 0" }}
-              {...{ timeout: 500 }}
-            >
+            <Grow style={{ transformOrigin: "0 0 0" }} {...{ timeout: 500 }}>
               <div>
                 <Box
                   title="Forge New Connections"
@@ -30,11 +26,7 @@ export function Boxes() {
         </div>
         <div className="col-span-2 flex flex-col">
           <AnimatedComponent>
-            <Grow
-              in={true}
-              style={{ transformOrigin: "0 0 0" }}
-              {...{ timeout: 500 }}
-            >
+            <Grow style={{ transformOrigin: "0 0 0" }} {...{ timeout: 500 }}>
               <div>
                 <Box
                   title="Group Chats"
@@ -44,11 +36,7 @@ export function Boxes() {
             </Grow>
           </AnimatedComponent>
           <AnimatedComponent>
-            <Grow
-              in={true}
-              style={{ transformOrigin: "0 0 0" }}
-              {...{ timeout: 500 }}
-            >
+            <Grow style={{ transformOrigin: "0 0 0" }} {...{ timeout: 500 }}>
               <div>
                 <Box
                   title="Head 2 Head"

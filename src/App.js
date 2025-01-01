@@ -8,6 +8,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import { Landing } from "./pages/Landing";
+import { AnimatedComponent } from "./components/Observer";
 
 function App() {
   const [ready, setReady] = useState(false);
@@ -20,11 +21,13 @@ function App() {
     <>
       {ready ? (
         <div className="App">
+          {/* <AnimatedComponent> */}
           <Router>
             <Routes>
               <Route path="/" element={<Landing />} />
             </Routes>
           </Router>
+          {/* </AnimatedComponent> */}
         </div>
       ) : null}
     </>

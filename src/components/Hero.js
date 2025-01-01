@@ -28,14 +28,14 @@ export function Hero() {
         <div className="absolute top-0 size-full bg-gradient-to-b from-transparent via-black/10 to-black/50"></div>
         <div className="absolute top-[70px] xl:top-1/4 left-0 right-0 w-full flex flex-col justify-center items-center">
           <AnimatedComponent>
-            <Slide in={true} direction="down">
+            <Slide direction="down">
               <div className="flex flex-col text-center items-center">
                 <img
-                  className="object-fit w-1/2 lg:mt-5 lg:w-[540px] lg:h-[90px] opacity-60"
+                  className="object-fit w-1/2 lg:mt-5 lg:w-[540px] lg:h-[90px] opacity-100"
                   alt="Parlay IT"
                   src={parlayIt}
                 />
-                <p className="mt-5 lg:mt-10 lg:pt-3 text-lg lg:text-3xl font-light text-center text-white max-w-[410px]">
+                <p className="mt-5 lg:mt-10 lg:pt-3 text-sm lg:text-xl front-sora font-light text-center text-white max-w-[410px]">
                   Meet the future of parlays
                 </p>
               </div>
@@ -45,11 +45,7 @@ export function Hero() {
 
         <div className="mb-10 p-3 flex flex-col md:flex-row gap-5 lg:gap-10 justify-center items-center text-center">
           <AnimatedComponent>
-            <Grow
-              in={true}
-              style={{ transformOrigin: "0 0 0" }}
-              {...{ timeout: 500 }}
-            >
+            <Grow style={{ transformOrigin: "0 0 0" }} {...{ timeout: 500 }}>
               <div>
                 <Rectangle
                   image={swap}
@@ -60,11 +56,7 @@ export function Hero() {
             </Grow>
           </AnimatedComponent>
           <AnimatedComponent>
-            <Grow
-              in={true}
-              style={{ transformOrigin: "0 0 0" }}
-              {...{ timeout: 1000 }}
-            >
+            <Grow style={{ transformOrigin: "0 0 0" }} {...{ timeout: 1000 }}>
               <div>
                 <Rectangle
                   image={stake}
@@ -75,11 +67,7 @@ export function Hero() {
             </Grow>
           </AnimatedComponent>
           <AnimatedComponent>
-            <Grow
-              in={true}
-              style={{ transformOrigin: "0 0 0" }}
-              {...{ timeout: 1500 }}
-            >
+            <Grow style={{ transformOrigin: "0 0 0" }} {...{ timeout: 1500 }}>
               <div>
                 <Rectangle
                   image={parlay}

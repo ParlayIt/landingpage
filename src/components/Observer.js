@@ -1,6 +1,12 @@
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useContext, useRef } from "react";
 
-export const AnimatedComponent = (props) => {
+// export const Provider = React.createContext();
+// // hook
+// export function UseObserver() {
+//   return useContext(Provider);
+// }
+
+export function AnimatedComponent({ children }) {
   const [isVisible, setVisible] = useState(false);
   const containerRef = useRef(null);
   const options = { root: null, rootMargin: "0px", threshold: 1 };
@@ -20,8 +26,11 @@ export const AnimatedComponent = (props) => {
   }, []);
 
   return (
-    <>
-      <div ref={containerRef}>{isVisible ? props.children : <></>}</div>
-    </>
+    // <Provider.Provider value={{ isVisible, containerRef }}>
+    <div ref={containerRef}>
+      {React.cloneElement(children, { in: isVisible })}
+      {/* }{isVisible ?  : <></>} */}
+    </div>
+    // </Provider.Provider>
   );
-};
+}
