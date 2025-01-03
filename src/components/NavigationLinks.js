@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
+import { NavbarLink } from "flowbite-react";
 
 export function NavigationLinks() {
   const links = [
@@ -12,16 +13,19 @@ export function NavigationLinks() {
   ];
 
   return (
-    <div className="hidden md:flex gap-8 justify-center items-center my-auto font-light tracking-wide whitespace-nowrap">
-      {links.map((item) => (
-        <a
+    <>
+      {/* <ul className="w-full flex flex-col justify-center items-center mt-0 mr-4 absolute z-20 overflow-y-auto md:relative md:p-0 rounded-lg md:flex-row md:space-x-14 rtl:space-x-reverse md:mt-0 md:border-0"> */}
+      {links.map((item, index) => (
+        <Link
+          key={index}
           href={item.link}
           target="_new"
-          className="self-stretch my-auto bg-blend-difference"
+          className="mt-0 self-stretch my-auto bg-blend-difference"
         >
           {item.name}
-        </a>
+        </Link>
       ))}
-    </div>
+      {/* </ul> */}
+    </>
   );
 }

@@ -26,16 +26,16 @@ export function Hero() {
           className="object-cover w-full"
         />
         <div className="absolute top-0 size-full bg-gradient-to-b from-transparent via-black/10 to-black/50"></div>
-        <div className="absolute top-[70px] xl:top-1/4 left-0 right-0 w-full flex flex-col justify-center items-center">
+        <div className="absolute top-[100px] sm:top-[150px] xl:top-[200px] left-0 right-0 w-full flex flex-col justify-center items-center">
           <AnimatedComponent>
             <Slide direction="down">
               <div className="flex flex-col text-center items-center">
                 <img
-                  className="object-fit w-1/2 lg:mt-5 lg:w-[540px] lg:h-[90px] opacity-100"
+                  className="object-fit w-1/2 lg:mt-5 md:w-[400px] lg:w-[540px] lg:h-[90px] opacity-100"
                   alt="Parlay IT"
                   src={parlayIt}
                 />
-                <p className="mt-5 lg:mt-10 lg:pt-3 text-sm lg:text-xl front-sora font-light text-center text-white max-w-[410px]">
+                <p className="mt-5 lg:mt-10 lg:pt-3 text-[15px] lg:text-xl front-sora font-light text-center text-white max-w-[410px]">
                   Meet the future of parlays
                 </p>
               </div>

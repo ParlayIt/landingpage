@@ -23,9 +23,7 @@ export function Stack() {
               <Accordian title="Draft a parlay" data="Parlay Pots." />
               <Accordian
                 title="Parlay of the week"
-                data="Enter the Ultimate Showdown with our revolutionary <br />
-        “Parlay Of The Week”. This weekly challenge is winner takes all in this
-        battle of the best."
+                data="Enter the Ultimate Showdown with our revolutionary “Parlay Of The Week”. This weekly challenge is winner takes all in this battle of the best."
               />
             </div>
           </Zoom>
