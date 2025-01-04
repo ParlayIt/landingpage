@@ -9,12 +9,12 @@ import React, { useState, useEffect, useContext, useRef } from "react";
 export function AnimatedComponent({ children }) {
   const [isVisible, setVisible] = useState(false);
   const containerRef = useRef(null);
-  const options = { root: null, rootMargin: "0px", threshold: 1 };
+  const options = { root: null, rootMargin: "0px", threshold: 0.8 };
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries, options) => {
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => setVisible(entry.isIntersecting));
-    });
+    }, options);
     if (containerRef.current) {
       observer.observe(containerRef.current);
     }
