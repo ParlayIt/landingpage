@@ -21,7 +21,9 @@ export function FooterBar() {
         <img className="w-full" alt="fade" src={fade} />
       </div>
       <div className="flex flex-wrap gap-5 justify-center lg:justify-between items-center text-sm leading-none text-white font-light tracking-wide whitespace-nowrap">
-        <NavigationLinks />
+        <div className="flex flex-wrap justify-center items-center gap-5 my-auto">
+          <NavigationLinks />
+        </div>
         <div className="flex flex-wrap gap-5 my-auto">
           <div className="self-stretch my-auto bg-blend-difference">
             Follow us:
