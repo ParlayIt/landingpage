@@ -20,7 +20,10 @@ export function Stack() {
                 data="Our unique P2P wagering system that allows users to take advantage
             of community driven “highest odds” and “most hits” Parlay Pots."
               />
-              <Accordian title="Draft a parlay" data="Parlay Pots." />
+              <Accordian
+                title="Draft a parlay"
+                data="Our ground breaking “Draft a Parlay“ system allows users to blend the worlds of fantasy and reality with the beauty of Parlays!"
+              />
               <Accordian
                 title="Parlay of the week"
                 data="Enter the Ultimate Showdown with our revolutionary “Parlay Of The Week”. This weekly challenge is winner takes all in this battle of the best."
