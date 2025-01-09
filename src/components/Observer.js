@@ -23,7 +23,7 @@ export function AnimatedComponent({ children }) {
         observer.unobserve(containerRef.current); // clean up
       }
     };
-  }, []);
+  });
 
   return (
     // <Provider.Provider value={{ isVisible, containerRef }}>

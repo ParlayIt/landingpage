@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import { Landing } from "./pages/Landing";
 import { AnimatedComponent } from "./components/Observer";
+import { Whitepaper } from "./components/Whitepaper";
 
 function App() {
   const [ready, setReady] = useState(false);
@@ -25,6 +26,7 @@ function App() {
           <Router>
             <Routes>
               <Route path="/" element={<Landing />} />
+              <Route path="/whitepaper" element={<Whitepaper />} />
             </Routes>
           </Router>
           {/* </AnimatedComponent> */}

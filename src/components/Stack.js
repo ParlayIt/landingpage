@@ -13,7 +13,7 @@ export function Stack() {
     <>
       <div className="grid md:grid-cols-2 gap-5">
         <AnimatedComponent>
-          <Zoom in={true}>
+          <Zoom>
             <div className="flex flex-col">
               <Accordian
                 title="Parlay Pots"
@@ -21,18 +21,18 @@ export function Stack() {
             of community driven “highest odds” and “most hits” Parlay Pots."
               />
               <Accordian
-                title="Draft a parlay"
+                title="Draft A Parlay"
                 data="Our ground breaking “Draft a Parlay“ system allows users to blend the worlds of fantasy and reality with the beauty of Parlays!"
               />
               <Accordian
-                title="Parlay of the week"
+                title="Parlay Of The week"
                 data="Enter the Ultimate Showdown with our revolutionary “Parlay Of The Week”. This weekly challenge is winner takes all in this battle of the best."
               />
             </div>
           </Zoom>
         </AnimatedComponent>
         <AnimatedComponent>
-          <Zoom in={true}>
+          <Zoom>
             <div className="relative flex justify-center items-center">
               <img
                 className="h-[400px] md:absolute right-0 lg:right-[-100px] top-[-100px] object-cover"

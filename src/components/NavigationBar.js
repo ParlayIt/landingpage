@@ -8,6 +8,15 @@ import {
 } from "flowbite-react";
 import { NavigationLinks } from "./NavigationLinks";
 import parlaylogo from "../images/parlaylogo.png";
+// import {
+//   usePDF,
+//   renderToStream,
+//   BlobProvider,
+//   PDFDownloadLink,
+// } from "@react-pdf/renderer";
+// import { Whitepaper } from "./Whitepaper";
+import { Link } from "react-router-dom";
+// import documentW from "../images/whitepaper.pdf";
 
 export function NavigationBar() {
   const links = [
@@ -18,6 +27,12 @@ export function NavigationBar() {
     },
     { name: "Documents", link: "https://github.com/ParlayIt/Documents" },
   ];
+
+  // const [instance, updateInstance] = usePDF({ document: Whitepaper });
+
+  // if (instance.loading) return <div>Loading ...</div>;
+
+  // if (instance.error) return <div>Something went wrong: {instance.error}</div>;
 
   return (
     <Navbar
@@ -68,6 +83,20 @@ export function NavigationBar() {
       >
         {/* <div className=""> */}
         <NavigationLinks />
+        {/* <a
+          href="./whitepaper"
+          download="parlayit_whitepaper.pdf"
+          onClick={() => window.open(instance.blob)}
+        >
+          Whitepaper
+        </a> */}
+        <Link
+          to="./whitepaper"
+          target="_new"
+          className="mt-0 self-stretch my-auto bg-blend-difference"
+        >
+          Whitepaper
+        </Link>
         {/* </div> */}
       </NavbarCollapse>
     </Navbar>

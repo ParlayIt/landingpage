@@ -3,14 +3,14 @@ import fade from "../images/vectorfading.svg";
 export function Rectangle(props) {
   return (
     <>
-      <div className="relative rounded-md bg-gradient-to-r from-[#e346ff] to-[#00c6ff] flex flex-col items-center p-0.5 mb-10 w-[300px]">
-        <div className="bg-black/85 px-1 rounded-md max-h-[260px]">
+      <div className="relative h-[280px] rounded-md bg-gradient-to-r from-[#e346ff] to-[#00c6ff] flex flex-col items-center p-0.5 mb-10">
+        <div className="bg-black/85 px-1 rounded-md max-h-[275px]">
           <div className="flex relative top-[-100px] flex-col justify-center items-center w-full self-stretch max-md:px-5">
             <img
               loading="lazy"
               src={props.image}
               alt={`feature illustration`}
-              className="inset-0 w-3/4"
+              className="inset-0 w-[200px]"
             />
             {/* <img
             loading="lazy"

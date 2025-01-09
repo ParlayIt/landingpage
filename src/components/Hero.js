@@ -43,7 +43,7 @@ export function Hero() {
           </AnimatedComponent>
         </div>
 
-        <div className="mb-10 p-3 flex flex-col md:flex-row gap-5 lg:gap-10 justify-center items-center text-center">
+        <div className="w-full mb-10 p-3 flex flex-col md:flex-row gap-2 lg:gap-10 justify-center items-center text-center">
           <AnimatedComponent>
             <Grow style={{ transformOrigin: "0 0 0" }} {...{ timeout: 500 }}>
               <div>

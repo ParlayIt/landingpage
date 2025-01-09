@@ -13,7 +13,7 @@ import { Stack } from "../components/Stack";
 import { Boxes } from "../components/Boxes";
 import { Roadmap } from "../components/Roadmap";
 
-import { Slide, Grow, Fade } from "@mui/material";
+import { Slide, Grow, Fade, Zoom } from "@mui/material";
 import { AnimatedComponent } from "../components/Observer";
 import { Partners } from "../components/Partners";
 
@@ -124,14 +124,15 @@ export function Landing() {
           {/* Section NFT */}
           <div className="w-full lg:w-3/4 relative top-0 md:top-[100px] md:mb-[150px] my-10 py-10 px-5 flex justify-center items-center">
             <div className="z-[-1] absolute top-[-100px] right-[0] w-[300px] h-[300px] rounded-[200px/200px] blur-[100px] bg-gradient-to-r from-[#e346ff] to-[#00c6ff] opacity-40"></div>
-            <div className="grid flex flex-row flex-wrap lg:grid-rows-1 lg:grid-cols-2 gap-20">
-              <div className="relative flex justify-center items-center">
+            <div className="flex flex-col lg:grid lg:grid-rows-1 lg:grid-cols-2 gap-20">
+              <div className="flex justify-center items-center">
                 <AnimatedComponent>
-                  <Fade style={{ transformOrigin: "0 0 0" }}>
+                  <Zoom>
                     <img className="object-cover" alt="NFT" src={nfts} />
-                  </Fade>
+                  </Zoom>
                 </AnimatedComponent>
               </div>
+
               <div className="flex flex-col">
                 <div className="pt-5 px-2 mb-5 text-white text-3xl font-sora flex flex-col lg:text-left">
                   <h1 className="">

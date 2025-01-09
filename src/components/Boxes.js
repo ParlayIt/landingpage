@@ -18,7 +18,7 @@ export function Boxes() {
               <div>
                 <Box
                   title="Forge New Connections"
-                  description="Friend zone is our unique take on a social network that is directly integrated within our dApp to create a smooth user experience."
+                  description="Friend Zone is our unique take on a social network that is directly integrated within our dApp to create a smooth user experience."
                 />
               </div>
             </Grow>

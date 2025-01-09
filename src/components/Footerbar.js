@@ -23,6 +23,13 @@ export function FooterBar() {
       <div className="flex flex-wrap gap-5 justify-center lg:justify-between items-center text-sm leading-none text-white font-light tracking-wide whitespace-nowrap">
         <div className="flex flex-wrap justify-center items-center gap-5 my-auto">
           <NavigationLinks />
+          <Link
+            to="./whitepaper"
+            target="_new"
+            className="mt-0 self-stretch my-auto bg-blend-difference"
+          >
+            Whitepaper
+          </Link>
         </div>
         <div className="flex flex-wrap gap-5 my-auto">
           <div className="self-stretch my-auto bg-blend-difference">

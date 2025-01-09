@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.react-pdf__Page__canvas {
+  width: 100%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
