@@ -27,6 +27,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Landing />} />
               <Route path="/whitepaper" element={<Whitepaper />} />
+              <Route path="*" element={<Navigate to="/" />} />
             </Routes>
           </Router>
           {/* </AnimatedComponent> */}
