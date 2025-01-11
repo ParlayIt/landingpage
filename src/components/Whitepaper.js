@@ -46,7 +46,7 @@ export function Whitepaper() {
     <>
       <div
         ref={ref}
-        className="w-full h-screen flex flex-col items-center overflow-x-hidden"
+        className="w-full h-full flex flex-col items-center overflow-x-hidden"
       >
         {/* <div className="flex flex-col">
           <p className="text-white text-bold">

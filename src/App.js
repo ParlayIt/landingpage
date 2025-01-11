@@ -10,6 +10,7 @@ import {
 import { Landing } from "./pages/Landing";
 import { AnimatedComponent } from "./components/Observer";
 import { Whitepaper } from "./components/Whitepaper";
+import { NavigationBar } from "./components/NavigationBar";
 
 function App() {
   const [ready, setReady] = useState(false);
@@ -24,6 +25,7 @@ function App() {
         <div className="App">
           {/* <AnimatedComponent> */}
           <Router>
+            <NavigationBar />
             <Routes>
               <Route path="/" element={<Landing />} />
               <Route path="/whitepaper" element={<Whitepaper />} />

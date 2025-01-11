@@ -24,7 +24,6 @@ export function Landing() {
   return (
     <>
       <div className="w-full h-full flex flex-col overflow-x-hidden">
-        <NavigationBar />
         <Hero />
 
         <div className="w-full container mx-auto flex flex-col justify-center items-center">
