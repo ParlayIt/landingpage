@@ -1,16 +1,20 @@
 // import { Page, Text, View, Document } from "react-pdf";
-import MyDocument from "../images/parlayit_whitepaper.pdf";
+import MyDocument from "../whitepaper.pdf";
 // import { PDFViewer } from "@react-pdf/renderer";
-import { Document, Outline, Page } from "react-pdf";
 import { useState, useEffect, useRef } from "react";
-import { pdfjs } from "react-pdf";
+import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/Page/TextLayer.css";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.mjs",
-  import.meta.url
-).toString();
+// pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+//   "pdfjs-dist/legacy/build/pdf.worker.min.mjs",
+//   import.meta.url
+// ).toString();
+// pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
+// pdfjs.GlobalWorkerOptions.workerSrc = `${process.env.PUBLIC_URL}/scripts/pdf.worker.js`;
+// pdfjs.GlobalWorkerOptions.workerSrc =
+//   "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js";
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.8.69/pdf.worker.min.js`;
 
 // Create Document Component
 export function Whitepaper() {
@@ -42,11 +46,16 @@ export function Whitepaper() {
   function nextPage() {
     changePage(1);
   }
+
+  // useEffect(() => {
+  //   // pdfjs.GlobalWorkerOptions.workerSrc = `${process.env.PUBLIC_URL}/scripts/pdf.worker.mjs`;
+  // }, []);
+
   return (
     <>
       <div
         ref={ref}
-        className="w-full h-full flex flex-col items-center overflow-x-hidden"
+        className="w-full h-full flex flex-col text-white items-center overflow-x-hidden"
       >
         {/* <div className="flex flex-col">
           <p className="text-white text-bold">
@@ -71,7 +80,12 @@ export function Whitepaper() {
             </button>
           </div>
         </div> */}
-        <Document file={MyDocument} onLoadSuccess={onDocumentLoadSuccess}>
+        {/* <div className="flex flex-col text-white relative top-5 items-center"> */}
+        <Document
+          className="mt-10 pt-5"
+          file={MyDocument}
+          onLoadSuccess={onDocumentLoadSuccess}
+        >
           {/* <Page width={width} className="pdf-page" pageNumber={pageNumber} /> */}
           {/* <Outline onItemClick={onItemClick} /> */}
           {Array.from(new Array(numPages), (_el, index) => (
@@ -86,18 +100,8 @@ export function Whitepaper() {
             />
           ))}
         </Document>
+        {/* </div> */}
       </div>
-      {/* <div className="w-full h-screen">
-        <iframe
-          className="w-full h-full"
-          src={MyDocument}
-          width={100}
-          height={100}
-        />
-      </div> */}
-      {/* <PDFViewer className="w-full h-full">
-        <Document file={{ data: MyDocument }}></Document>
-      </PDFViewer> */}
     </>
   );
 }
