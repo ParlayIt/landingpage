@@ -29,7 +29,7 @@ function App() {
             <NavigationBar />
             <Routes>
               <Route path="/" element={<Landing />} />
-              <Route path="/whitepaper" element={<WhitepaperViewer />} />
+              <Route path="/whitepaper" element={<Whitepaper />} />
               <Route path="*" element={<Navigate to="/" />} />
             </Routes>
           </Router>

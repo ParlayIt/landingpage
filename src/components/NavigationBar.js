@@ -56,14 +56,14 @@ export function NavigationBar() {
       className="z-10 fixed top-0 left-0 right-0 w-full flex flex-row item-center justify-between text-sm leading-none text-white rounded-lg border border-solid bg-black bg-opacity-80 border-white border-opacity-10"
     >
       <NavbarBrand>
-        <a href="/">
-          <img
-            loading="lazy"
-            src={parlaylogo}
-            alt=""
-            className="object-contain shrink-0 self-start max-w-full aspect-[3.73] w-[149px]"
-          />
-        </a>
+        {/* <a href="/"> */}
+        <img
+          loading="lazy"
+          src={parlaylogo}
+          alt=""
+          className="object-contain shrink-0 self-start max-w-full aspect-[3.73] w-[149px]"
+        />
+        {/* </a> */}
       </NavbarBrand>
 
       <div className="flex md:order-2 flex-row items-center justify-center">
