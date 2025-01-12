@@ -10,7 +10,6 @@ import {
 import { Landing } from "./pages/Landing";
 import { AnimatedComponent } from "./components/Observer";
 import { Whitepaper } from "./components/Whitepaper";
-import { WhitepaperViewer } from "./components/WhitepaperViewer";
 import { NavigationBar } from "./components/NavigationBar";
 
 function App() {
