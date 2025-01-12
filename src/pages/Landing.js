@@ -125,15 +125,11 @@ export function Landing() {
             <div className="z-[-1] absolute top-[-100px] right-[0] w-[300px] h-[300px] rounded-[200px/200px] blur-[100px] bg-gradient-to-r from-[#e346ff] to-[#00c6ff] opacity-40"></div>
             <div className="flex flex-col lg:grid lg:grid-rows-1 lg:grid-cols-2 gap-20">
               <div className="relative flex justify-center items-center">
-                <AnimatedComponent>
-                  <Zoom>
-                    <img
-                      className="w-[400px] object-fit"
-                      alt="NFT"
-                      src={nfts}
-                    />
-                  </Zoom>
-                </AnimatedComponent>
+                {/* <AnimatedComponent> */}
+                {/* <Zoom> */}
+                <img className="w-[400px] object-fit" alt="NFT" src={nfts} />
+                {/* </Zoom> */}
+                {/* </AnimatedComponent> */}
               </div>
 
               <div className="flex flex-col">
