@@ -1,5 +1,4 @@
-import moonbeam from "../images/moonbeam.png";
-import polkadot from "../images/polkadot.png";
+import base from "../images/base.png";
 import { Collapse, Slide, Grow } from "@mui/material";
 import { AnimatedComponent } from "./Observer";
 
@@ -17,20 +16,8 @@ export function Partners() {
                 <p className="pb-2 text-sm font-sora leading-normal text-white text-opacity-70">
                   Powered by
                 </p>
-                <a href="https://moonbeam.network/" target="_new">
-                  <img className="h-[50px]" alt="moonbeam" src={moonbeam} />
-                </a>
-              </div>
-            </Slide>
-          </AnimatedComponent>
-          <AnimatedComponent>
-            <Slide direction="left">
-              <div className="flex flex-col">
-                <p className="pb-2 text-sm font-sora leading-normal text-white text-opacity-70">
-                  Secured by
-                </p>
-                <a href="https://polkadot.com/" target="_new">
-                  <img className="h-[50px]" alt="polkadot" src={polkadot} />
+                <a href="https://base.org/" target="_new">
+                  <img className="h-[50px]" alt="base" src={base} />
                 </a>
               </div>
             </Slide>
