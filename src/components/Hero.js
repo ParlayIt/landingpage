@@ -72,7 +72,7 @@ export function Hero() {
                 <Rectangle
                   image={parlay}
                   title="Parlay IT"
-                  description="Utilize your $PLY in our signature rooms such as Most-Hits and Winner-takes-all!"
+                  description="Utilize $USDT or $USDC in our signature rooms such as Most-Hits and Winner-takes-all!"
                 />
               </div>
             </Grow>
