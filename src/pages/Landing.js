@@ -195,7 +195,7 @@ export function Landing() {
                   <div>
                     <Roadmap
                       fullfilled="true"
-                      title="Q4 2024"
+                      title="Q4 2025"
                       items={[
                         "Dapp development",
                         "Marketing campaign",
@@ -216,7 +216,7 @@ export function Landing() {
                   <div>
                     <Roadmap
                       fulfilled="false"
-                      title="Q1 2025"
+                      title="Q1 2026"
                       items={[
                         "Community giveaways",
                         "Secured partnerships",
@@ -238,7 +238,7 @@ export function Landing() {
                   <div>
                     <Roadmap
                       fulfilled="false"
-                      title="Q2 2025"
+                      title="Q2 2026"
                       items={[
                         "dApp launch",
                         "Mobile app development",
