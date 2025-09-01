@@ -1,4 +1,4 @@
-import base from "../images/base.png";
+import soneium from "../images/Soneium.webp";
 import { Collapse, Slide, Grow } from "@mui/material";
 import { AnimatedComponent } from "./Observer";
 
@@ -16,8 +16,8 @@ export function Partners() {
                 <p className="pb-2 text-sm font-sora leading-normal text-white text-opacity-70">
                   Powered by
                 </p>
-                <a href="https://base.org/" target="_new">
-                  <img className="h-[50px]" alt="base" src={base} />
+                <a href="https://soneium.org/en/" target="_new">
+                  <img className="h-[50px]" alt="soneium" src={soneium} />
                 </a>
               </div>
             </Slide>

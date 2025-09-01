@@ -16,17 +16,16 @@ export function Stack() {
           <Zoom>
             <div className="flex flex-col">
               <Accordian
-                title="Parlay Pots"
-                data="Our unique P2P wagering system that allows users to take advantage
-            of community driven “highest odds” and “most hits” Parlay Pots."
+                title="Parlay Game Modes"
+                data="Our unique Player-vs-Player (P2P) game modes allow users to compete in dynamic, skill based challenges. These game modes reward creativity, precision, and bold decision-making."
               />
               <Accordian
                 title="Draft A Parlay"
                 data="Our ground breaking “Draft a Parlay“ system allows users to blend the worlds of fantasy and reality with the beauty of Parlays!"
               />
               <Accordian
-                title="Parlay Of The week"
-                data="Enter the Ultimate Showdown with our revolutionary “Parlay Of The Week”. This weekly challenge is winner takes all in this battle of the best."
+                title="Skill-Based Tournaments"
+                data="Step into the ultimate test of strategy with our weekly Skill-Based Tournaments. Compete against top players in curated game formats where strategy and smart decision-making are the keys to victory."
               />
             </div>
           </Zoom>

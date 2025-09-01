@@ -12,6 +12,7 @@ import nfts from "../images/nftimage.png";
 import { Stack } from "../components/Stack";
 import { Boxes } from "../components/Boxes";
 import { Roadmap } from "../components/Roadmap";
+import { AdvancedFeatures } from "../components/AdvancedFeatures";
 
 import { Slide, Grow, Fade, Zoom } from "@mui/material";
 import { AnimatedComponent } from "../components/Observer";
@@ -62,6 +63,11 @@ export function Landing() {
           {/* Section Stacks */}
           <div className="w-full lg:w-3/4 relative my-10 py-10 px-5 flex justify-center items-center">
             <Stack />
+          </div>
+
+          {/* NEW: Advanced Features Section */}
+          <div className="w-full lg:w-3/4 relative my-10 py-10 px-5 flex justify-center items-center">
+            <AdvancedFeatures />
           </div>
 
           {/* Friendzone heading */}
