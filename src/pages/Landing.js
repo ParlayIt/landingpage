@@ -8,7 +8,7 @@ import vector3 from "../images/vector3.svg";
 import waves from "../images/waves.png";
 import vectorgroup from "../images/vectorgroup.png";
 import nfts from "../images/nftimage.png";
-
+import { AdvancedFeatures } from "../components/AdvancedFeatures";
 import { Stack } from "../components/Stack";
 import { Boxes } from "../components/Boxes";
 import { Roadmap } from "../components/Roadmap";
@@ -62,6 +62,10 @@ export function Landing() {
           {/* Section Stacks */}
           <div className="w-full lg:w-3/4 relative my-10 py-10 px-5 flex justify-center items-center">
             <Stack />
+          </div>
+          {/* NEW: Advanced Features Section */}
+          <div className="w-full lg:w-3/4 relative my-10 py-10 px-5 flex justify-center items-center">
+            <AdvancedFeatures />
           </div>
 
           {/* Friendzone heading */}
